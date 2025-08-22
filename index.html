@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeetProfile-Tracker</title>
+    <link rel="stylesheet" href="index.css">
+    <link  rel="icon" href="RowFiles/logoIcon.png">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Logo + Heading -->
+        <div class="page-logo">
+            <img src="RowFiles/logoIcon.png" alt="icon" class="icon">
+            <h1 class="heading">LeetProfile</h1>
+        </div>
+
+        <!-- Username input -->
+        <div class="user-container">
+            <p>Enter Username here:</p>
+            <div class="user-input-container">
+                <input type="text" placeholder="enter your username" id="user-input">
+                <button id="search-button" class="button-container">
+                    <img src="RowFiles/analyze-icon.svg" alt="analyse" class="analyze-icon">
+                    <span class="analyse-text">Analyze</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-container">
+            <div class="progress-wrapper">
+
+                <!-- Circle -->
+                <div class="progress-circle">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+
+                        <!-- Easy -->
+                        <circle class="slice-bg easy" cx="18" cy="18" r="15.9155" stroke-dasharray="33.333,100"
+                            stroke-dashoffset="0" />
+                        <circle id="easy-arc" class="slice easy" cx="18" cy="18" r="15.9155" stroke-dasharray="0,100"
+                            stroke-dashoffset="0" />
+
+                        <!-- Medium -->
+                        <circle class="slice-bg medium" cx="18" cy="18" r="15.9155" stroke-dasharray="33.333,100"
+                            stroke-dashoffset="-33.333" />
+                        <circle id="medium-arc" class="slice medium" cx="18" cy="18" r="15.9155"
+                            stroke-dasharray="0,100" stroke-dashoffset="-33.333" />
+
+                        <!-- Hard -->
+                        <circle class="slice-bg hard" cx="18" cy="18" r="15.9155" stroke-dasharray="33.333,100"
+                            stroke-dashoffset="-66.666" />
+                        <circle id="hard-arc" class="slice hard" cx="18" cy="18" r="15.9155" stroke-dasharray="0,100"
+                            stroke-dashoffset="-66.666" />
+
+                    </svg>
+                    <div class="circle-text">
+                        <span id="overall-label">0 / 0</span>
+                    </div>
+                </div>
+
+
+                <!-- Side labels -->
+                <div class="sub-progress">
+                    <div class="sub-progress-row easy">
+                        <span class="e">Easy</span>
+                        <span id="easy-label">0/0</span>
+                    </div>
+                    <div class="sub-progress-row medium">
+                        <span class="m">Medium</span>
+                        <span id="medium-label">0/0</span>
+                    </div>
+                    <div class="sub-progress-row hard">
+                        <span class="h">Hard</span>
+                        <span id="hard-label">0/0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats cards -->
+            <div class="stats-cards"></div>
+        </div>
+    </div>
+
+    <!-- Add js -->
+    <script src="index.js"></script>
+</body>
+
+</html>

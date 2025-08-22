@@ -1,0 +1,293 @@
+/* Default (PC/Desktop) – unchanged */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background: #c7cbd3;
+    color: #f1f5f9;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: #1e293b;
+    padding: 2rem 2rem;
+    border-radius: 1.5rem;
+    width: 45%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.page-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.icon {
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: #26344d;
+    border-radius: 50%;
+}
+
+.heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.user-container p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.user-input-container {
+    display: flex;
+    gap: 1rem;
+    height: 2.2rem;
+}
+
+#user-input {
+    flex: 1;
+    padding: 0.7rem 0.8rem;
+    border-radius: 0.6rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    border-radius: 0.6rem;
+    padding: 0.7rem 0.8rem;
+    background-color: #084d6a;
+    border: none;
+    color: #2Ec4F1;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-container:hover {
+    background-color: #025b81;
+}
+
+.analyze-icon {
+    width: 14px;
+    height: 14px;
+}
+
+.stats-container {
+    display: none;
+    margin-top: 1rem;
+}
+
+.progress-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.analyse-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.sub-progress {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 55%;
+}
+
+.sub-progress-row {
+    display: flex;
+    justify-content: space-between;
+    background: #334155;
+    padding: 0.8rem 1rem;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    min-width: 150px;
+    font-weight: bold;
+}
+
+.sub-progress-row.easy {
+    border: 1px solid #2de06e;
+}
+
+.sub-progress-row.medium {
+    border: 1px solid #c7db31;
+}
+
+.sub-progress-row.hard {
+    border: 1px solid #ef4444;
+}
+
+.easy .e {
+    color: #2de06e;
+}
+
+.medium .m {
+    color: #c7db31;
+}
+
+.hard .h {
+    color: #ef4444;
+}
+
+.progress-circle {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-chart {
+    width: 80%;
+    height: 80%;
+    transform: rotate(-90deg);
+}
+
+.slice-bg {
+    fill: none;
+    stroke-width: 3;
+    opacity: 0.2;
+}
+
+.slice {
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.6s ease;
+}
+
+.circle-text {
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #c7cbd3;
+    border-radius: 0.2rem;
+    padding: 0.1rem 0.1rem;
+}
+
+/* colors */
+.easy {
+    stroke: #22c55e;
+}
+
+.medium {
+    stroke: #3b82f6;
+}
+
+.hard {
+    stroke: #ef4444;
+}
+
+/* Stats cards */
+.stats-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.card {
+    padding: 1rem;
+    border-radius: 0.8rem;
+    background: #334155;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #38bdf8;
+}
+
+.card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .user-input-container {
+        flex-direction: column;
+        gap: 0.5rem;
+        height: auto;
+    }
+
+    #user-input {
+        font-size: 0.95rem;
+        padding: 0.6rem 0.7rem;
+    }
+
+    .button-container {
+        width: 45%;
+        height: 2.4rem;
+        padding: 0.6rem;
+        font-size: 1rem;
+
+    }
+
+    .progress-wrapper {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .sub-progress {
+        width: 100%;
+    }
+
+    .progress-circle {
+        width: 180px;
+        height: 180px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .container {
+        width: 70%;
+    }
+
+    .progress-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .sub-progress {
+        width: 80%;
+    }
+}
