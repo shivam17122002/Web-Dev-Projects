@@ -11,7 +11,6 @@ This repo is my **web dev playground** 🏗️ — showcasing creativity, proble
 A simple blog-style website built with HTML & CSS.  
 - 📌 Features: Static blog layout, styled components, responsive design.  
 - 🛠 Tech: **HTML, CSS**  
-- 🌐 Demo: [Live Link](https://your-demo-link.com)
 
 ---
 
@@ -27,7 +26,6 @@ An educational landing page concept.
 A recipe-sharing web page.  
 - 📌 Features: Recipe cards, grid/flexbox layout, responsive design.  
 - 🛠 Tech: **HTML, CSS**  
-- 🌐 Demo: [Live Link](https://your-demo-link.com)
 
 ---
 
@@ -38,7 +36,7 @@ A responsive dashboard that fetches and displays **LeetCode stats**.
   - Track problems solved (Easy / Medium / Hard)
   - Interactive progress circle & stats cards  
 - 🛠 Tech: **HTML, CSS, JavaScript, LeetCode API**  
-- 🌐 Demo: [Live Link](https://your-demo-link.com)  
+- 🌐 Demo: [Live Link](https://leetcodeprofile-tracker.netlify.app/)  
 
 ---
 
